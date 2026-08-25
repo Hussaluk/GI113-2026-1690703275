@@ -44,9 +44,87 @@ namespace Lab02
             hpPercent = currentHp * 100 / maxHp;
             Console.WriteLine($"HP Percentage: {hpPercent}%");
 
+            //Lab02 part 2 is here
+
+            // Character Information
+            string Player1 = "Choso";
+            string Player2 = "Itadori";
+            string Player3 = "Todo";
+            string Player4 = "Megumi";
+
+            // Character Grade Information
+            char SpecialGradeSorcerer = 'S';
+            char grade1Sorcerer = 'A';
+            char grade2Sorcerer = 'B';
+            char specialGradeCurse = 'A';
+
+            //Character HP Information
+            int HighmaxHp = 200;
+            int midHp = 150;
+            int lowHp = 100;
+
+            //Character Speed Information
+            int highSpeed = 80;
+            int midSpeed = 60;
+            int lowSpeed = 40;
+
+            //Character Attack Power Information
+            float highAttackPower = 50f;
+            float midAttackPower = 40f;
+            float lowAttackPower = 30f;
+
+            //Character Curse Energy Information
+            double highCurseEnergy = 1.5;
+            double midCurseEnergy = 1.0;
+            double lowCurseEnergy = 0.5;
+
+            //Character Curse/Sorcerer Information
+            bool isCurse = true;
+            bool isHuman = false;
+
+            Console.WriteLine();
+            Console.WriteLine("=====Characteristics Design=====");
+
+            Console.WriteLine($"Character {Player1}");
+            Console.WriteLine($"Grade: {SpecialGradeSorcerer}");
+            Console.WriteLine($"HP: {HighmaxHp}");
+            Console.WriteLine($"Speed: {highSpeed}");
+            Console.WriteLine($"Attack Power: {highAttackPower}");
+            Console.WriteLine($"Curse Energy: {highCurseEnergy}");
+            Console.WriteLine($"Is Curse: {isCurse}");
+
+            Console.WriteLine();
+            Console.WriteLine($"Character {Player2}");
+            Console.WriteLine($"Grade: {grade1Sorcerer}");
+            Console.WriteLine($"HP: {HighmaxHp}");
+            Console.WriteLine($"Speed: {midSpeed}");
+            Console.WriteLine($"Attack Power: {midAttackPower}");
+            Console.WriteLine($"Curse Energy: {midCurseEnergy}");
+            Console.WriteLine($"Is Curse: {isHuman}");
+
+            Console.WriteLine();
+            Console.WriteLine($"Character {Player3}");
+            Console.WriteLine($"Grade: {grade2Sorcerer}");
+            Console.WriteLine($"HP: {midHp}");
+            Console.WriteLine($"Speed: {midSpeed}");
+            Console.WriteLine($"Attack Power: {midAttackPower}");
+            Console.WriteLine($"Curse Energy: {midCurseEnergy}");
+            Console.WriteLine($"Is Curse: {isHuman}");
+
+            Console.WriteLine();
+            Console.WriteLine($"Character {Player4}");
+            Console.WriteLine($"Grade: {specialGradeCurse}");
+            Console.WriteLine($"HP: {lowHp}");
+            Console.WriteLine($"Speed: {lowSpeed}");
+            Console.WriteLine($"Attack Power: {midAttackPower}");
+            Console.WriteLine($"Curse Energy: {highCurseEnergy}");
+            Console.WriteLine($"Is Curse: {isHuman}");
         }
-
-
-
     }
 }
+
+
+
+
+
+
