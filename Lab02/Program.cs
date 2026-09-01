@@ -119,7 +119,23 @@ namespace Lab02
             Console.WriteLine($"Attack Power: {midAttackPower}");
             Console.WriteLine($"Curse Energy: {highCurseEnergy}");
             Console.WriteLine($"Is Curse: {isHuman}");
-        }
+            
+            var mainCharacter = "gojo";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }   
     }
 }
 
