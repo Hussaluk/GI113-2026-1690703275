@@ -1,0 +1,33 @@
+﻿namespace assignment
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            const string GameName = "Overclocked";
+
+            var character = "boy";
+            var level = 1;
+            int sanity = 20;
+            float health = 1.5f;
+            double speed = 1.0;
+            bool IsHuman = true;
+
+            Console.WriteLine($"Welcome to {GameName}!");
+            Console.WriteLine($"Character: {character}");
+            Console.WriteLine($"level: {level}");
+            Console.WriteLine($"Sanity: {sanity}");
+            Console.WriteLine($"Health: {health}");
+            Console.WriteLine($"Speed: {speed}");
+            Console.WriteLine($"Human: {IsHuman}");
+            Console.WriteLine();
+
+            double sanityasdouble = sanity; // impicit
+            Console.WriteLine($"Sanity as double: {sanityasdouble}");
+            int healthBar = (int)health; // explicit 
+            int healthCore = Convert.ToInt32(health); // convert float
+            Console.WriteLine($"Health as int: {healthBar}");
+            Console.WriteLine($"Health converted to int: {healthCore}");
+        }
+    }
+}
