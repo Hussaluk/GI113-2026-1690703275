@@ -11,8 +11,7 @@ namespace assignment01
     {
         static void Main(string[] args)
         {
-            const string GameName = "Overclocked";
-
+            const string GameName = "====-Overclocked-====";
             var character = "boy";
             var level = 1;
             int sanity = 20;
@@ -20,6 +19,8 @@ namespace assignment01
             double speed = 1.0;
             bool IsHuman = true;
 
+            Console.WriteLine("============Your Stats============");
+            Console.WriteLine("============         =============");
             Console.WriteLine($"Welcome to {GameName}!");
             Console.WriteLine($"Character: {character}");
             Console.WriteLine($"level: {level}");
@@ -27,14 +28,19 @@ namespace assignment01
             Console.WriteLine($"Health: {health}");
             Console.WriteLine($"Speed: {speed}");
             Console.WriteLine($"Human: {IsHuman}");
-            Console.WriteLine();
+            Console.WriteLine("==================================");
+            Console.WriteLine("");
 
+            Console.WriteLine("============Your Stats In Game============");
             double sanityasdouble = sanity; // impicit
-            Console.WriteLine($"Sanity as double: {sanityasdouble}");
+            Console.WriteLine($"Your base sanity : {sanityasdouble}");
             int healthBar = (int)health; // explicit 
             int healthCore = Convert.ToInt32(health); // convert float
-            Console.WriteLine($"Health as int: {healthBar}");
-            Console.WriteLine($"Health converted to int: {healthCore}");
+            Console.WriteLine($"Your health in game: {healthBar}");
+            Console.WriteLine($"Your health correctly: {healthCore}");
+            Console.WriteLine("==========================================");
+
+
         }
     }
 }
