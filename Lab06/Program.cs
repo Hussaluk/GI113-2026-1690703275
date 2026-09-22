@@ -79,6 +79,7 @@ namespace Lab06
             Console.WriteLine("You are attacking the dragon!");
             Console.WriteLine("Attack = Monster Take damage = 1");
             Console.WriteLine("Counter = Player Deal slightly damage = 2");
+            Console.WriteLine("Dodge = Player Take less damage = 3");
 
             Console.WriteLine("\nChoose your action between 1 or 3 attack: ");
             bool action = int.TryParse(Console.ReadLine(), out int playerAction);
@@ -132,14 +133,6 @@ namespace Lab06
                     Console.WriteLine($"You dodge DragonAttack, You take {dragonAtk} Damage");
                 }
             }
-
-
-
-
-
-
-
-
 
         }
     }
