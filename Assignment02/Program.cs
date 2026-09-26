@@ -56,7 +56,10 @@ namespace Assignment02
                 }
 
             }
-            
+            else
+            {
+                Console.WriteLine("Out of option");  
+            }
         }
     }
 }
