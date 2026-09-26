@@ -1,4 +1,6 @@
-﻿namespace Assignment02
+﻿using System.ComponentModel.Design;
+
+namespace Assignment02
 {
     internal class Program
     {
@@ -7,6 +9,8 @@
 
             double smeltRate = 0.2500;
             double savageRate = 0.3000;
+            double maxBatch = 100;
+            double lowerestNumber = 1;
 
             Console.WriteLine("========================");
             Console.WriteLine("   ---> The Forge <---  ");
@@ -16,42 +20,43 @@
             Console.WriteLine(" Key 'B' for Savage (Ingot -> Bar)");
             Console.WriteLine("Choose S OR B");
 
-            bool ore = char.TryParse(Console.ReadLine(), out char ingot);
-
-            if (ingot == 'S')
+            bool ore = char.TryParse(Console.ReadLine(), out char material);
+            if (material == 'S')
             {
-                Console.WriteLine("How mouch would you like");
-                if (double.TryParse(Console.ReadLine(), out double ingotamout))
+                if (material == 'S')
                 {
-                    double Iron = ingotamout * smeltRate;
-                    Console.WriteLine($"You got {Iron}");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid value, Please try again later.");
+                    Console.WriteLine("How much would you like.");
+                    double.TryParse(Console.ReadLine(), out double ironAmount);
+                    if (ironAmount <= maxBatch && ironAmount >= lowerestNumber)
+                    {
+                        double foolgold = ironAmount * smeltRate;
+                        Console.WriteLine($"You got {foolgold} iron bar");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid Number, Try again");
+                    }
                 }
             }
-            else if (ingot == 'B')
+            else if (material == 'B')
             {
-                Console.WriteLine("How mouch would you like");
-                if (double.TryParse(Console.ReadLine(), out double ingotamout))
+                if (material == 'B')
                 {
-                    double gold = ingotamout * savageRate;
-                    Console.WriteLine($"You got {gold}");
-                }
-                else
-                {
-                    Console.WriteLine("Invalid value, Please try again.");
+                    Console.WriteLine("How much would you like.");
+                    double.TryParse(Console.ReadLine(), out double goldAmount);
+                    if (goldAmount <= maxBatch && goldAmount >= lowerestNumber)
+                    {
+                        double gold = goldAmount * savageRate;
+                        Console.WriteLine($"You got {gold} gold bar");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid Number, Try again");
+                    }
                 }
 
             }
-
-
-
-
-
-
-
-            }
+            
         }
     }
+}
