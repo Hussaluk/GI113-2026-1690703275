@@ -1,5 +1,12 @@
-﻿using System.ComponentModel.Design;
+﻿
 
+/*
+ * Student ID : 1690703275
+ * Name       : Hussaluk Sriprasert
+ * Section    : 129C
+ * No.        : 31
+ * Course     : GI113 Computer Programming (GI)
+ */
 namespace Assignment02
 {
     internal class Program
