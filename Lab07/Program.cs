@@ -1,4 +1,10 @@
-﻿using System.Runtime.CompilerServices;
+﻿/*
+ * Student ID : 1690703275
+ * Name       : Hussaluk Sriprasert
+ * Section    : 129C
+ * No.        : 31
+ * Course     : GI113 Computer Programming (GI)
+ */
 
 namespace Lab07
 {
@@ -7,9 +13,6 @@ namespace Lab07
         static void Main(string[] args)
         {
             const int MonsterHP = 20;
-            const int MonsterAtk = 20;
-            const int HeroHp = 100;
-
 
             Console.Write("Monster Defense: ");
             int.TryParse(Console.ReadLine(), out int monsterDefense);
