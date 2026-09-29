@@ -14,10 +14,10 @@ namespace Assignment02
         static void Main(string[] args)
         {
 
-            double smeltRate = 0.2500;
-            double savageRate = 0.3000;
-            double maxBatch = 100;
-            double lowerestNumber = 1;
+            const double smeltRate = 0.2500;
+            const double savageRate = 0.3000;
+            const double maxBatch = 100;
+            const double lowerestNumber = 1;
 
             Console.WriteLine("========================");
             Console.WriteLine("   ---> The Forge <---  ");
