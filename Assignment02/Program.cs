@@ -14,8 +14,8 @@ namespace Assignment02
         static void Main(string[] args)
         {
 
-            const double smeltRate = 0.2500;
-            const double savageRate = 0.3000;
+            const double smeltRate = 0.2;
+            const double salvageRate = 0.3;
             const double maxBatch = 100;
             const double lowerestNumber = 1;
 
@@ -53,7 +53,7 @@ namespace Assignment02
                     double.TryParse(Console.ReadLine(), out double goldAmount);
                     if (goldAmount <= maxBatch && goldAmount >= lowerestNumber)
                     {
-                        double gold = goldAmount * savageRate;
+                        double gold = goldAmount / salvageRate;
                         Console.WriteLine($"You got {gold} gold bar");
                     }
                     else
