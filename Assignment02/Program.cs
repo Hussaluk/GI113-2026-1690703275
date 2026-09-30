@@ -14,15 +14,15 @@ namespace Assignment02
         static void Main(string[] args)
         {
 
-            const double smeltRate = 0.2;
-            const double salvageRate = 0.3;
+            const double smeltRate = 0.3;
+            const double salvageRate = 0.5;
             const double maxBatch = 100;
             const double lowerestNumber = 1;
 
             Console.WriteLine("========================");
             Console.WriteLine("   ---> The Forge <---  ");
             Console.WriteLine("========================");
-            Console.WriteLine("Iron smelting: 0.25 / savage 0.3");
+            Console.WriteLine("Iron smelting: 0.3 / savage 0.5");
             Console.WriteLine(" Key 'S' for Smelt (Ore -> Ingot)");
             Console.WriteLine(" Key 'B' for Savage (Ingot -> Bar)");
             Console.WriteLine("Choose S OR B");
