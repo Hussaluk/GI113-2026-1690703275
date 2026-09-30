@@ -25,14 +25,14 @@ namespace Assignment02
             Console.WriteLine("Iron smelting: 0.3 / savage 0.5");
             Console.WriteLine(" Key 'S' for Smelt (Ore -> Ingot)");
             Console.WriteLine(" Key 'B' for Savage (Ingot -> Bar)");
-            Console.WriteLine("Choose S OR B");
+            Console.Write("Choose S OR B : ");
 
             bool ore = char.TryParse(Console.ReadLine(), out char material);
             if (material == 'S')
             {
                 if (material == 'S')
                 {
-                    Console.WriteLine("How much would you like.");
+                    Console.Write("How much would you like. : ");
                     double.TryParse(Console.ReadLine(), out double ironAmount);
                     if (ironAmount <= maxBatch && ironAmount >= lowerestNumber)
                     {
@@ -49,7 +49,7 @@ namespace Assignment02
             {
                 if (material == 'B')
                 {
-                    Console.WriteLine("How much would you like.");
+                    Console.Write("How much would you like. : ");
                     double.TryParse(Console.ReadLine(), out double goldAmount);
                     if (goldAmount <= maxBatch && goldAmount >= lowerestNumber)
                     {
